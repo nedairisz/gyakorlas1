@@ -33,9 +33,26 @@ def feladat5():
     print("Helyes!")
 
 # Addig kérjünk be számokat, amíg 3-mal osztható vagy négyzetszám nem lesz.*
+def feladat6():
+    a: int = int(input("Adj meg egy szämot!: "))
+    gyok: float = a ** 0.5
+    while not (gyok.is_integer() or (a%3==0)):
+        print("3-al oszthato vagy nögyzet szämot adj meg!")
+        a: int = int(input("Adj meg egy szämot!: "))
+        gyok: float = a ** 0.5
+    print(f"{a} 3-al osztato vagy negyzetszäm!")
+
 # Kérj be valós 3 számot, amíg szerkeszthető háromszög oldalait nem kapjuk!
 def feladat7():
-    a:int = int(input("Adj meg egy számot!")
+    a: int = int(input("Adj meg egy számot!"))
+    b: int = int(input("Adj meg egy számot!"))
+    c: int = int(input("Adj meg egy számot!"))
+    while not ((a<b+c) and (b<a+c) and (c<a+b)):
+        print("A megadott számok nem alkalmasak háromszög oldalalinak. Próbáld újra!")
+        a: int = int(input("Adj meg egy számot!"))
+        b: int = int(input("Adj meg egy számot!"))
+        c: int = int(input("Adj meg egy számot!"))
+    print("Ok.")
 
 # Addig kérjünk be szöveget, amíg legalább 3 karakterest nem írnak be. Majd írjuk ki a szót csupa nagy betűvel!*
 def felafat8():

@@ -8,5 +8,8 @@ gyakorlas.feladat3()
 gyakorlas.feladat2()
 
 gyakorlas.feladat4()
-'''
+
 gyakorlas.feladat10()
+gyakorlas.feladat6()
+'''
+gyakorlas.feladat7()
